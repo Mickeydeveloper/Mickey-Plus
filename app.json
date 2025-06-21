@@ -1,9 +1,9 @@
 
 {
   "name":"MICKEY-PLUS",
-  "description":"Best whatsapp bot💥 developed by princetech",
+  "description":"Best whatsapp bot💥 developed by mickeytech",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://ibb.co/q70RyBd",
+  "logo":"https://files.catbox.moe/o2klsv.jpg",
   "repository":"https://github.com/ekitale/maths-project",
   "succes_url":"/",
   "stack":"heroku-24",
@@ -66,7 +66,7 @@
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://ibb.co/JjV0S4Tn",
+      "value":"https://files.catbox.moe/o2klsv.jpg",
       "required":false
        
      },
