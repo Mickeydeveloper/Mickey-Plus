@@ -31,13 +31,13 @@ zokou({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions
         audio: { url: AUDIO_URL }, 
             mimetype: 'audio/mp4', 
             ptt: true, // Voice note form
-      text: `BWB...: ${ping}ms\n`,
+      text: `MICKEY +...: ${ping}ms\n`,
       contextInfo: {
         forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: '120363398106360290@newsletter',
-              newsletterName: 'BWB XMD',
+              newsletterName: 'MICKEY +',
               serverMessageId: 143},
         externalAdReply: {
           
@@ -52,7 +52,7 @@ zokou({ nomCom: "ping", categorie: "General" }, async (dest, zk, commandeOptions
     }, { quoted: ms });
 
     await zk.sendMessage(dest, {
-        text: "```BWB IS LIVE NOW.✓```"
+        text: "```MICKEY + IS LIVE NOW.✓```"
     } ,{ quoted: ms });// Voice note form
     }catch (e) {
         console.log("❌ Ping Command Error: " + e);
