@@ -46,7 +46,7 @@ zokou({
     
     const data = response.data.data;
     const messageText = `
-ᬑ *CHARLESKE-VMD QURAN SURAH* ᬒ
+ᬑ *MICKEY-PLUS QURAN SURAH* ᬒ
 
 *🕌 Quran: The Holy Book*
 📜 *Surah:* 🕌❤️${data.number}: ${data.asma.ar.long} (${data.asma.en.long})❤️🕌
@@ -62,7 +62,7 @@ zokou({
       text: messageText,
       contextInfo: {
         externalAdReply: {
-          title: "CHARLESKE QURAN SURAH",
+          title: "MICKEY-PLUS QURAN SURAH",
           body: `We're reading: ${data.asma.en.long}`,
           mediaType: 1,
           thumbnailUrl: conf.URL, 
