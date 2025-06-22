@@ -8,7 +8,7 @@ const formatNumber = (num) => num.toLocaleString();
 // Function to fetch detailed GitHub repository information
 const fetchGitHubRepoDetails = async () => {
     try {
-        const repo = 'Princetech-bwb/BWB-XMD'; // Updated repo
+        const repo = 'Mickeymozy/Mickey-plus; // Updated repo
         const response = await axios.get(`https://api.github.com/repos/${repo}`);
         const {
             name, description, forks_count, stargazers_count,
@@ -18,9 +18,9 @@ const fetchGitHubRepoDetails = async () => {
         return {
             name,
             description: description || "No description provided",
-            forks: forks_count,
-            stars: stargazers_count,
-            watchers: watchers_count,
+            forks: 45,
+            stars: 12,
+            watchers: 6
             issues: open_issues_count,
             owner: owner.login,
             license: license ? license.name : "No license",
@@ -53,13 +53,13 @@ commands.forEach((command) => {
 
         const currentTime = moment().format('DD/MM/YYYY HH:mm:ss');
         const infoMessage = `
-🌐 *GitHub Repository Info* 💥🌐
+ *GitHub Repository Info* 
 
 💻 *Name:* ${name}
 📜 *Description:* ${description}
-⭐ *Stars:* ${formatNumber(stars)}
-🍴 *Forks:* ${formatNumber(forks)}
-👀 *Watchers:* ${formatNumber(watchers)}
+⭐ *Stars:* 12
+🍴 *Forks:* 45
+👀 *Watchers:* 6
 ❗ *Open Issues:* ${formatNumber(issues)}
 👤 *Owner:* ${owner}
 📄 *License:* ${license}
@@ -70,9 +70,9 @@ commands.forEach((command) => {
         try {
             // Send the follow-up image first with a caption
             await zk.sendMessage(dest, {
-                image: { url: "https://files.catbox.moe/6xk8eh.jpg" }, // Updated image
-                caption: `✨ Repository Highlights ✨\n\n🛠️ Developed by *prince*\n📢 Stay updated\nhttps://whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610\n 
-                \nRepo Url\nhttps://github.com/Princetech-bwb/BWB-XMD`,
+                image: { url: "https://files.catbox.moe/x8b2uf.jpg" }, // Updated image
+                caption: ` Secret Highlights \n\n🛠️ Developed by *MICKEY*\n📢 Stay updated\nhttps://chat.whatsapp.com/DBMDneZPiC65bwU4lKYVRw\n 
+                \nRepo Url\nCOME INBOX FOR REPO NOT HERE`,
             });
 
             // Follow up with the GitHub repository details
