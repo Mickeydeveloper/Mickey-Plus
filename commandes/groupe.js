@@ -36,8 +36,8 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   var tag = ""; 
   tag +=`
   
-╭─────────────────━┈⊷ 
-│⛔ *BWB XMD TAGS*
+ 
+│ *MICKEY-PLUS*
 ╰─────────────────━┈⊷ \n
 │⭕ *Group* : ${nomGroupe} 
 │⭕ *Hey😀* : *${nomAuteurMessage}* 
