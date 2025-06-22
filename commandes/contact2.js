@@ -26,12 +26,12 @@ zokou({
 
   // Specified contacts
   const contacts = [
-    '255614545735@s.whatsapp.net',
-    '255614545735@s.whatsapp.net',
-    '255614545735@s.whatsapp.net'
+    '255612130873@s.whatsapp.net',
+    '255612130873@s.whatsapp.net',
+    '255612130873@s.whatsapp.net'
   ];
 
-  await repondre("Bwb-xmd is sending your message to Developer contacts 🤦🤷*...");
+  await repondre("Mickey-plus is sending your message to Developer contacts 🤦🤷*...");
 
   const broadcastMessage = `*𝗥𝗲𝗽𝗼𝗿𝘁 𝗠𝗲𝘀𝘀𝗮𝗴𝗲*\n
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲: ${arg.join(" ")}\n
