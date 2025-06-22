@@ -25,14 +25,15 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     const date = moment().format('DD/MM/YYYY');
 
     let infoMsg = `╭━━━━━━━━━━━━━⬣
+     ❒𝓜𝓘𝓒𝓚𝓔𝓨-𝓟𝓛𝓤𝓢 𝓦𝓗𝓐𝓣𝓢𝓐𝓟𝓟❒
 ━━━━━━━━━━━━━
-❒ᴄᴏɴᴛᴇxᴛ-ɪɴғᴏ☔
+❒user info
 ┌────────────
-│ 🚩 Name: Mickey
-│ 🌎 contry: Tanzania, United Republic of 🇹🇿
-│ 🗓 date: 2025-06-22
-│ 🕒 local time: 04:42:43 PM
-│ 📱 Systeam/Opr: android
+│  Name: Mickey
+│  contry: Tanzania, United Republic of 🇹🇿
+│  base: Mickey base
+│  version: 1.o.o
+│  Systeam/Opr: android
 └────────────
 
 ${readMore}
@@ -54,13 +55,13 @@ ${readMore}
 
     menuMsg += `🌙 Good night! Sleep well and recharge! 😴`;
 
-    let imageUrl = "https://files.catbox.moe/6xk8eh.jpg";
+    let imageUrl = "https://files.catbox.moe/o2klsv.jpg";
 
     try {
         zk.sendMessage(dest, { 
             image: { url: imageUrl }, 
             caption: infoMsg + menuMsg, 
-            footer: "BWB XMD" 
+            footer: "MICKEY-PLUS" 
         }, { quoted: ms });
     } catch (e) {
         console.log("🥵 Menu error: " + e);
