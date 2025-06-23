@@ -5,7 +5,7 @@ const {zokou} = require("../framework/zokou");
 
 
 zokou( {
-  nomCom : "dit",
+  nomCom : "speak",
  categorie : "tts",
   reaction : "😁" },
       async(dest,zk, commandeOptions)=> {
