@@ -24,18 +24,17 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
 
-    let infoMsg = `╭━━━━━━━━━━━━━⬣
-     ❒𝓜𝓘𝓒𝓚𝓔𝓨-𝓟𝓛𝓤𝓢 𝓦𝓗𝓐𝓣𝓢𝓐𝓟𝓟❒
-━━━━━━━━━━━━━
-❒user info
-┌────────────
+    let infoMsg = ` ╭──❍「 *MICKEY-+ MENU* 」❍
+  
+    =<𝙼𝙸𝙲𝙺𝙴𝚈-𝙿𝙻𝚄𝚂 +>=
+┌──────────────❍
 │  Name: Mickey
-│  contry: Tanzania, United Republic of 🇹🇿
-│  base: Mickey base
+│  bot name: Mickey-plus
+│  base: Mickey basic
 │  version: 1.o.o
-│  Systeam/Opr: android
-└────────────
-
+│  developer: Mickey
+└──────────────❍ 
+──❍
 ${readMore}
 🛠 *Available Commands* 🛠
 ━━━━━━━━━━━━━━━━━━━━n`;
