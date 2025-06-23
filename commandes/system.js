@@ -50,22 +50,9 @@ zokou({
 
   // Array of sound file URLs
   const audioFiles = [
-    'https://files.catbox.moe/hpwsi2.mp3',
-    'https://files.catbox.moe/xci982.mp3',
-    'https://files.catbox.moe/utbujd.mp3',
-    'https://files.catbox.moe/w2j17k.m4a',
-    'https://files.catbox.moe/851skv.m4a',
-    'https://files.catbox.moe/qnhtbu.m4a',
-    'https://files.catbox.moe/lb0x7w.mp3',
-    'https://files.catbox.moe/efmcxm.mp3',
-    'https://files.catbox.moe/gco5bq.mp3',
-    'https://files.catbox.moe/26oeeh.mp3',
-    'https://files.catbox.moe/a1sh4u.mp3',
-    'https://files.catbox.moe/vuuvwn.m4a',
-    'https://files.catbox.moe/wx8q6h.mp3',
-    'https://files.catbox.moe/uj8fps.m4a',
-    'https://files.catbox.moe/dc88bx.m4a',
-    'https://files.catbox.moe/tn32z0.m4a'
+    'https://files.catbox.moe/73pztj.mp3',
+    'https://files.catbox.moe/nrmiy1.mp3',
+    x
   ];
 
   // Randomly pick an audio file from the list
@@ -82,7 +69,7 @@ zokou({
     fileName: 'shizo',
     contextInfo: {
       externalAdReply: {
-        title: '𝗜 𝗔𝗠 𝗔𝗟𝗜𝗩𝗘 𝗠𝗢𝗧𝗛𝗘𝗥𝗙𝗨𝗖𝗞𝗘𝗥',
+        title: 'ME AND YOUR WHATSAPP ARE SAME ',
         body: conf.OWNER_NAME,
         thumbnailUrl: conf.URL,
         sourceUrl: conf.GURL, // Corrected variable name
@@ -368,7 +355,7 @@ zokou({
         `https://api.heroku.com/apps/${herokuAppName}/builds`,
         {
           source_blob: {
-            url: "https://github.com/Charleskenya1/CHARLESKE-VMD/tarball/main",
+            url: "https://github.com/Mickeydeveloper/Mickey-Plus/tarball/main",
           },
         },
         {
