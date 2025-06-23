@@ -24,17 +24,17 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
 
-    let infoMsg = ` ╭──❍「 *MICKEY-+ MENU* 」❍
+    let infoMsg = ` ╭──❍「 *MICKEY-PLUS BOT MENU* 」❍
   
-    =<𝙼𝙸𝙲𝙺𝙴𝚈-𝙿𝙻𝚄𝚂 +>=
+    *=<𝙼𝙸𝙲𝙺𝙴𝚈-𝙿𝙻𝚄𝚂 >=*
 ┌──────────────❍
-│  Name: Mickey
-│  bot name: Mickey-plus
-│  base: Mickey basic
-│  version: 1.o.o
-│  developer: Mickey
+│  *Name:* ${sender}:
+│  *bot name:* Mickey-plus
+│  *base:* Mickey basic
+│  *version:* 1.o.o
+│  *developer:* Mickey
 └──────────────❍ 
-──❍
+──❍Type any command you want
 ${readMore}
 🛠 *Available Commands* 🛠
 ━━━━━━━━━━━━━━━━━━━━n`;
