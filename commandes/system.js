@@ -52,7 +52,7 @@ zokou({
   const audioFiles = [
     'https://files.catbox.moe/73pztj.mp3',
     'https://files.catbox.moe/nrmiy1.mp3',
-    x
+    'https://files.catbox.moe/73pztj.mp3',
   ];
 
   // Randomly pick an audio file from the list
