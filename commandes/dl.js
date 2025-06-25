@@ -76,7 +76,7 @@ zokou({ nomCom: "tiktoklite", categorie: "Download", reaction: "🎵" }, async (
 
   const videoUrl = arg.join(" ");
 
- let data = await axios.get('https://api.onesytex.my.id/api/tiktok-dl='+ videoUrl) ;
+ let data = await axios.get('https://bk9.fun/download/tiktok?q='+ videoUrl) ;
 
   let tik = data.data.data
 
