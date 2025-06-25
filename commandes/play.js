@@ -107,25 +107,8 @@ zokou({
         },
       },
       {
-      caption: `\n*BWB-XMD*\n
-`,
-        document: { url: downloadUrl },
-        mimetype: 'audio/mpeg',
-        contextInfo: {
-          externalAdReply: {
-            title: conf.BOT,
-            body: videoDetails.title,
-            mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
-            renderLargerThumbnail: false,
-            showAdAttribution: true,
-          },
-        },
-      },
-      {
-      caption: `\n*BWB-XMD*\n
-`,
+      caption: `\n*MICKEY-PLUS*\n
+`,`,
         document: { url: downloadUrl },
         mimetype: 'audio/mp4',
         contextInfo: {
@@ -155,7 +138,7 @@ zokou({
 
 // Define the command with aliases for video
 zokou({
-  nomCom: "video4",
+  nomCom: "video",
   aliases: ["videodoc", "film", "mp4"],
   categorie: "download",
   reaction: "ðŸŽžï¸"
@@ -235,10 +218,10 @@ zokou({
         },
       },
       {
-      caption: `\n*BWB-MUSIC HUB*\n
+      caption: `\n*MICKEY-PLUS*\n
 
 
-> ðŸ’™POWERED BY PRINCE XMD âŽ`,
+> ðŸ’™POWERED BY MICKEY-PLUS âŽ`,
         document: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
