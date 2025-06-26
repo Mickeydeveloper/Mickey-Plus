@@ -110,34 +110,8 @@ zokou({
       {
       caption: `\n*MICKEY-PLUS*\n
 `,
-        document: { url: downloadUrl },
-        mimetype: '',
-        contextInfo: {
-          externalAdReply: {
-            title: conf.BOT,
-            body: videoDetails.title,
-            mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
-            renderLargerThumbnail: false,
-            showAdAttribution: true,
-          },
-        },
-      },
-      {
-      caption: `\n*MICKEY-PLUS*\n
-`,
-        document: { url: downloadUrl },
-        mimetype: '',
-        contextInfo: {
-          externalAdReply: {
-            title: conf.BOT,
-            body: videoDetails.title,
-            mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
-            renderLargerThumbnail: false,
-            showAdAttribution: true,
+       
+        ENJOY ,
           },
         },
       }
@@ -240,20 +214,7 @@ zokou({
 
 
 > ðŸ’™POWERED BY MICKEY-PLUS âŽ`,
-        document: { url: downloadUrl },
-        mimetype: '',
-        contextInfo: {
-          externalAdReply: {
-            title: conf.BOT,
-            body: videoDetails.title,
-            mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
-            renderLargerThumbnail: false,
-            showAdAttribution: true,
-          },
-        },
-      }
+        
     ];
 
     // Send the download link to the user
