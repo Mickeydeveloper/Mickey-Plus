@@ -26,8 +26,8 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 
     let infoMsg = `━━━━━━━━━━━━━
 ╭──❍「 *MICKEY-PLUS BOT MENU* 」❍
-  
-    *=<𝙼𝙸𝙲𝙺𝙴𝚈-𝙿𝙻𝚄𝚂 >=*
+  Welcome  ${sender} this my menu use safety
+    
 ┌──────────────❍
 │  *Name:* ${sender}:
 │  *bot name:* Mickey-plus
