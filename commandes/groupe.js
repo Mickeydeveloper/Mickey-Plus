@@ -37,11 +37,11 @@ zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   tag +=`
   
  
-│ *MICKEY-PLUS*
-╰─────────────────━┈⊷ \n
-│⭕ *Group* : ${nomGroupe} 
-│⭕ *Hey😀* : *${nomAuteurMessage}* 
-│⭕ *Message* : *${mess}* 
+   *MICKEY-PLUS*
+────────────────━┈⊷ \n
+ *Group* : ${nomGroupe} 
+ *Hey* : *${nomAuteurMessage}* 
+ *Message* : *${mess}* 
 ╰─────────────━┈⊷\n
 \n
 
