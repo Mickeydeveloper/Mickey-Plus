@@ -24,8 +24,8 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     const temps = moment().format('HH:mm:ss');
     const date = moment().format('DD/MM/YYYY');
 
-    let infoMsg = ` 
-    ╭──❍「 *MICKEY-PLUS BOT MENU* 」❍
+    let infoMsg = `━━━━━━━━━━━━━
+╭──❍「 *MICKEY-PLUS BOT MENU* 」❍
   
     *=<𝙼𝙸𝙲𝙺𝙴𝚈-𝙿𝙻𝚄𝚂 >=*
 ┌──────────────❍
@@ -35,7 +35,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 │  *version:* 1.o.o
 │  *developer:* Mickey
 └──────────────❍ 
-──❍Type any command you want
+
 ${readMore}
 🛠 *Available Commands* 🛠
 ━━━━━━━━━━━━━━━━━━━━n`;
@@ -55,13 +55,13 @@ ${readMore}
 
     menuMsg += `🌙 Good night! Sleep well and recharge! 😴`;
 
-    let imageUrl = "https://files.catbox.moe/o2klsv.jpg";
+    let imageUrl = "https://files.catbox.moe/6xk8eh.jpg";
 
     try {
         zk.sendMessage(dest, { 
             image: { url: imageUrl }, 
             caption: infoMsg + menuMsg, 
-            footer: "MICKEY-PLUS" 
+            footer: "BWB XMD" 
         }, { quoted: ms });
     } catch (e) {
         console.log("🥵 Menu error: " + e);
