@@ -28,7 +28,7 @@ async function uploadToCatbox(filePath) {
 }
 // Define the command with aliases for play
 zokou({
-  nomCom: "play",
+  nomCom: "song",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "download",
   reaction: "ðŸ”Š"
@@ -111,7 +111,7 @@ zokou({
       caption: `\n*MICKEY-PLUS*\n
 `,
         document: { url: downloadUrl },
-        mimetype: 'audio/mpeg',
+        mimetype: '',
         contextInfo: {
           externalAdReply: {
             title: conf.BOT,
@@ -128,7 +128,7 @@ zokou({
       caption: `\n*MICKEY-PLUS*\n
 `,
         document: { url: downloadUrl },
-        mimetype: 'audio/mpeg',
+        mimetype: '',
         contextInfo: {
           externalAdReply: {
             title: conf.BOT,
@@ -156,7 +156,7 @@ zokou({
 
 // Define the command with aliases for video
 zokou({
-  nomCom: "video",
+  nomCom: "mp4",
   aliases: ["videodoc", "film", "mp4"],
   categorie: "download",
   reaction: "ðŸŽžï¸"
@@ -241,7 +241,7 @@ zokou({
 
 > ðŸ’™POWERED BY MICKEY-PLUS âŽ`,
         document: { url: downloadUrl },
-        mimetype: 'video/mp4',
+        mimetype: '',
         contextInfo: {
           externalAdReply: {
             title: conf.BOT,
@@ -270,7 +270,7 @@ zokou({
 
 // Command to upload image, video, or audio file
 zokou({
-  'nomCom': 'tourl',       // Command to trigger the function
+  'nomCom': 'url',       // Command to trigger the function
   'categorie': "download", // Command category
   'reaction': 'â¸ï¸'    // Reaction to use on command
 }, async (groupId, client, context) => {
