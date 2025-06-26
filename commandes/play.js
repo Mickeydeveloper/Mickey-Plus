@@ -1,3 +1,4 @@
+
 const { zokou } = require("../framework/zokou");
 const axios = require('axios');
 const ytSearch = require('yt-search');
@@ -25,13 +26,12 @@ async function uploadToCatbox(filePath) {
     throw new Error(String(error));
   }
 }
-
 // Define the command with aliases for play
 zokou({
   nomCom: "play",
   aliases: ["song", "playdoc", "audio", "mp3"],
   categorie: "download",
-  reaction: "🔊"
+  reaction: "ðŸ”Š"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
@@ -91,7 +91,8 @@ zokou({
     // Prepare the message payload with external ad details
     const messagePayloads = [
       {
-        caption: `\n*BWB-XMD*\n`,
+      caption: `\n*MICKEY-PLUS*\n
+`,
         audio: { url: downloadUrl },
         mimetype: 'audio/mp4',
         contextInfo: {
@@ -107,7 +108,25 @@ zokou({
         },
       },
       {
-        caption: `\n*MICKEY-PLUS*\n`,
+      caption: `\n*MICKEY-PLUS*\n
+`,
+        document: { url: downloadUrl },
+        mimetype: 'audio/mp4',
+        contextInfo: {
+          externalAdReply: {
+            title: conf.BOT,
+            body: videoDetails.title,
+            mediaType: 1,
+            sourceUrl: conf.GURL,
+            thumbnailUrl: firstVideo.thumbnail,
+            renderLargerThumbnail: false,
+            showAdAttribution: true,
+          },
+        },
+      },
+      {
+      caption: `\n*MICKEY-PLUS*\n
+`,
         document: { url: downloadUrl },
         mimetype: 'audio/mp4',
         contextInfo: {
@@ -140,7 +159,7 @@ zokou({
   nomCom: "video",
   aliases: ["videodoc", "film", "mp4"],
   categorie: "download",
-  reaction: "🎞️"
+  reaction: "ðŸŽžï¸"
 }, async (dest, zk, commandOptions) => {
   const { arg, ms, repondre } = commandOptions;
 
@@ -200,7 +219,8 @@ zokou({
     // Prepare the message payload with external ad details
     const messagePayloads = [
       {
-        caption: `\n*MICKEY-PLUS*\n`,
+      caption: `\n*MICKEY-PLUS*\n
+`,
         video: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
@@ -216,7 +236,10 @@ zokou({
         },
       },
       {
-        caption: `\n*MICKEY-PLUS*\n\n\n> 💖POWERED BY MICKEY-PLUS ♛`,
+      caption: `\n*MICKEY-PLUS*\n
+
+
+> ðŸ’™POWERED BY MICKEY-PLUS âŽ`,
         document: { url: downloadUrl },
         mimetype: 'video/mp4',
         contextInfo: {
@@ -244,11 +267,12 @@ zokou({
   }
 });
 
+
 // Command to upload image, video, or audio file
 zokou({
-  nomCom: 'tourl',
-  categorie: "download",
-  reaction: '⏸️'
+  'nomCom': 'tourl',       // Command to trigger the function
+  'categorie': "download", // Command category
+  'reaction': 'â¸ï¸'    // Reaction to use on command
 }, async (groupId, client, context) => {
   const { msgRepondu, repondre } = context;
 
@@ -262,15 +286,22 @@ zokou({
   // Check if the message contains a video
   if (msgRepondu.videoMessage) {
     mediaPath = await client.downloadAndSaveMediaMessage(msgRepondu.videoMessage);
-  } else if (msgRepondu.gifMessage) {
+  }
+ else if (msgRepondu.gifMessage) {
     mediaPath = await client.downloadAndSaveMediaMessage(msgRepondu.gifMessage);
-  } else if (msgRepondu.stickerMessage) {
+  }
+ else if (msgRepondu.stickerMessage) {
     mediaPath = await client.downloadAndSaveMediaMessage(msgRepondu.stickerMessage);
-  } else if (msgRepondu.documentMessage) {
+  }
+else if (msgRepondu.documentMessage) {
     mediaPath = await client.downloadAndSaveMediaMessage(msgRepondu.documentMessage);
-  } else if (msgRepondu.imageMessage) {
+  }
+  // Check if the message contains an image
+  else if (msgRepondu.imageMessage) {
     mediaPath = await client.downloadAndSaveMediaMessage(msgRepondu.imageMessage);
-  } else if (msgRepondu.audioMessage) {
+  }
+  // Check if the message contains an audio file
+  else if (msgRepondu.audioMessage) {
     mediaPath = await client.downloadAndSaveMediaMessage(msgRepondu.audioMessage);
   } else {
     // If no media (image, video, or audio) is found, prompt user
@@ -289,3 +320,5 @@ zokou({
   } catch (error) {
     console.error("Error while creating your URL:", error);
     repondre("Oops, there was an error.");
+  }
+});
