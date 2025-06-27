@@ -79,6 +79,7 @@
 	,
     "HEROKU_API_KEY": {
     "description": "insert your heroku api-key (this is optionnal)",
+     "value":"HRKU-859cb7ed-48d8-482c-9d6a-38afe1ac0f9a",    
      "required" :false
     },
   "HEROKU_APP_NAME": {
@@ -99,7 +100,7 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "mickey"
+    "value": "MICKEY"
   },
     "NUMERO_OWNER":
   {
