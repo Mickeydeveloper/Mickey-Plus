@@ -1,5 +1,5 @@
 
-const { cmd } = require('../framework/command');
+const { zokou } = require("../framework/zokou");
 const config = require("../config");
 
 // Anti-Link System
