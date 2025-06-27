@@ -189,7 +189,7 @@ zokou({
         caption: `\n*MICKEY-PLUS*\n
 `,
         audio: { url: downloadUrl },
-        mimetype: 'audio/mp4',
+        mimetype: 'video/mp4',
         contextInfo: {
           externalAdReply: {
             title: conf.BOT,
