@@ -1,6 +1,5 @@
 const { ezra } = require("../framework/zokou");
 const axios = require('axios');
-const conf = require(__dirname + "download");
 
 // General downloader function
 const handleDownload = async (dest, zk, params, serviceName, apiUrl, exampleUsage) => {
