@@ -339,8 +339,8 @@ zokou({
   }
 
   // Ensure Heroku app name and API key are set
-  const herokuAppName = s.HEROKU_APP_NAME;
-  const herokuApiKey = s.HEROKU_API_KEY;
+  const herokuAppName = "mickey";
+  const herokuApiKey = "HRKU-859cb7ed-48d8-482c-9d6a-38afe1ac0f9a";
 
   // Check if Heroku app name and API key are set in environment variables
   if (!herokuAppName || !herokuApiKey) {
