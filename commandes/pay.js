@@ -34,11 +34,10 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
 let infoMsg =  `
-\n> Recipient Name:** MICKDAD HAMZA 
-\n> Mobile Number:** 0615944741 (halotel) 
-\n> Hello 👋\n${nomAuteurMessage}
-\n> Payment Method:** Online Payment  
-\n> Country:** Tanzania 🇹🇿
+\ Recipient Name:** MICKDAD HAMZA 
+\ Mobile Number:** 0615944741 (HALOTEL) 
+\ Hello 👋\n${nomAuteurMessage} 
+\ Country:** Tanzania 🇹🇿
 `;
 let menuMsg = `
   `;
