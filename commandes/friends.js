@@ -16,49 +16,21 @@ zokou({
     mybotpic: _0x43a6e2
   } = _0x2358bf;
   const _0x21b56d = [{
-    'nom': "RAHMANI OWNER",
-    'numero': "255693629079" 
+    'nom': "MICKEY",
+    'numero': "255612130873" 
   },{
-    'nom': "DEPLOMENT SERVICES",
-    'numero': "254736761160"
+    'nom': "PRINCE",
+    'numero': "255614545735"
   }, {
-    'nom': "Qart Md",
-    'numero': "255613300056"
+    'nom': "LOFT",
+    'numero': "255778018545"
   }, {
-    'nom': "Njabulo Jb",
-    'numero': "26777821911"
+    'nom': "DEPLOYMENT SERVICES",
+    'numero': "255711765335"
   }, {
-    'nom': "TimnasaTech",
-    'numero': "255784766591"
-  }, {
-    'nom': "dev Rahmani",
-    'numero': "255693629079"
-  }, {
-    'nom': "",
-    'numero': ""
-  }, {
-    'nom': "",
-    'numero': ""
-  }, {
-    'nom': "",
-    'numero': ""
-  }, {
-'nom': "",
-    'numero': ""
-  }, {
-'nom': "",
-    'numero': ""
-  }, {
-'nom': "🤕",
-    'numero': "Load...."
-  }, {
-'nom': "",
-    'numero': ""
-  }, {
-    'nom': "🤕",
-    'numero': "load...."
+
   }];
-  let _0x2d5c7e = "Hello👋  *I'm RAHMANI MD Wa Bot* \nThe Following Numbers Are For   *RAHMANI-MD* Agents, \nYou Can Ask Them Anything Regarding RAHMANI MD\nFollow Our Channel For More Tech :https://whatsapp.com/channel/0029VavShWD1iUxb6kjV6K2T \n*KEEP USING RAHMANI-MD*:\n\n";
+  let _0x2d5c7e = "Hello👋  *Mickey-plus Wa Bot* \nThe Following Numbers Are For   *MICKEY-PLUS* Agents, \nYou Can Ask Them Anything Regarding MICKEY-PLUS\nFollow Our Channel For More Tech :https://www.whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610 \n*KEEP USING MICKEY-PLUS*:\n\n";
   for (const _0x14eeec of _0x21b56d) {
     _0x2d5c7e += "----------------\n(●) " + _0x14eeec.nom + " : https://wa.me/" + _0x14eeec.numero + "\n";
   }
