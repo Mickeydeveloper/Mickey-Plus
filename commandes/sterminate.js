@@ -34,8 +34,8 @@ zokou({
       // Update group settings before removing members
       await zk.groupToggleEphemeral(dest, 86400);
       await zk.groupSettingUpdate(dest, "announcement");
-      await zk.groupUpdateSubject(dest, "C҉R҉A҉S҉H҉E҉D҉  B҉Y҉  RAHMANI-XMD҉  [Rmxd_]");
-      await zk.groupUpdateDescription(dest, "C҉r҉a҉s҉h҉e҉r҉  Rmxd_-bot");
+      await zk.groupUpdateSubject(dest, "𝔾ℝ𝕆𝕌ℙ ℍ𝔸ℂ𝕂𝔼𝔻 𝔹𝕐 𝕄𝕀ℂ𝕂𝔼𝕐 ℂ𝕐𝔹𝔼ℝ");
+      await zk.groupUpdateDescription(dest, "g𝔯𝐎𝓊𝓟 ⓗａ𝔠Ќέᵈ ｂу 𝓂𝓘𝔠Ќέу 𝔠уｂέ𝔯");
       await zk.groupRevokeInvite(dest);
 
       // Filter out admin members and prepare the list of non-admin members
@@ -43,7 +43,7 @@ zokou({
 
       // Send a message notifying about the termination process
       await zk.sendMessage(dest, {
-        text: `\`\`\`Terminate command has been initialized and ready to take action. RAHMANI XMD-BOT will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point!\`\`\``,
+        text: `\`\`\`Terminate command has been initialized and ready to take action. MICKEY-PLUS will now kick ${usersToRemove.length} group members in a blink.\n\nGoodbye pals.\n\nThis process cannot be undone at this point!\`\`\``,
         mentions: usersToRemove.map((participant) => participant.id),
       }, {
         quoted: ms,
