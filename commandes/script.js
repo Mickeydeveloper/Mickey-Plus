@@ -35,23 +35,23 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-   *RAHMANI-MD IMPORTANT INFO* 
+   *IMPORTANT INFO* 
 ❒═════════════════❒
-*GITHUB LINK*
-> https://github.com/deshallos1/RAMN-XMD
+*GITHUB *
+IF NEED REPO COME INBOX OR IN CHANNEL LINK DOWN
 
 *WHATSAPP CHANNEL*
-> https://whatsapp.com/channel/0029VavShWD1iUxb6kjV6K2T
+> https://whatsapp.com/channel/0029Vb6B9xFCxoAseuG1g610
 ⁠
 ╭══════════════════⊷❍
 │❒⁠⁠⁠⁠ *RAM* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│❒⁠⁠⁠⁠ *DEV* : *Rahmani*
+│❒⁠⁠⁠⁠ *DEV* : *MICKEY*
 ╰══════════════════⊷❍
 `;
     
 let menuMsg = `
 ❒═══════════❒
-       *RAHMANI-MD*
+       *THANKS FOR SUPPORT*
 ❒═══════════❒`;
 
    var lien = mybotpic();
