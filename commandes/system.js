@@ -287,7 +287,7 @@ function react(dest, zk, msg, reaction) {
 }
 
 zokou({
-  nomCom: 'uptime2',
+  nomCom: 'uruntime',
   aliases: ['runtime', 'running'],
   desc: 'To check runtime',
   categorie: 'system', // Fixed the typo here (Categorie -> categorie)
@@ -304,7 +304,7 @@ zokou({
     text: `*${conf.OWNER_NAME} UPTIME IS ${runtime(botUptime)}*`,
     contextInfo: {
       externalAdReply: {
-        title: `${conf.BOT} UPTIME`,
+        title: `${conf.BOT} RUNTIME`,
         body: `Bot Uptime: ${runtime(botUptime)}`, // Format the uptime before sending
         thumbnailUrl: conf.URL, // Replace with your bot profile photo URL
         sourceUrl: conf.GURL, // Your channel URL
@@ -355,7 +355,7 @@ zokou({
         `https://api.heroku.com/apps/${herokuAppName}/builds`,
         {
           source_blob: {
-            url: "https://github.com/Mickeydeveloper/Mickey-Plus/tree/main",
+            url: "https://github.com/Mickeydeveloper/Mickey-Plus/main",
           },
         },
         {
@@ -367,7 +367,7 @@ zokou({
       );
 
       // Notify the user about the update and redeployment
-      await repondre("*Your bot is getting updated, wait 2 minutes for the redeploy to finish! This will install the latest version of CHARLES-VMD.*");
+      await repondre("*Your bot is getting updated, wait 2 minutes for the redeploy to finish! This will install the latest version .*");
       console.log("Build details:", response.data);
     } catch (error) {
       // Handle any errors during the redeployment process
