@@ -28,7 +28,7 @@ zokou({ nomCom: 'vcf',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_please wait..._*`) 
+                 await repondre(`*_Sorry, I can't give it to you.” _*`) 
 
    
 
@@ -48,7 +48,7 @@ zokou({ nomCom: 'getallmembers',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_getting all members_*`) 
+                 await repondre(`*_Namba zote! Hapana labda moja😄😄😄_*`) 
 
    
 
@@ -58,7 +58,7 @@ zokou({ nomCom: 'getallmembers',
 
 
 
-zokou({ nomCom: 'channel',
+zokou({ nomCom: 'crone,
     desc: 'To check runtime',
     Categorie: 'My Contact',
     reaction: '✌️', 
@@ -69,7 +69,7 @@ zokou({ nomCom: 'channel',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`Support Here My Owner By Follow This Channel Please :https://whatsapp.com/channel/CP2BirU5pBj04cXXgEbfuv`) 
+                 await repondre(`Najua unachofanya, na ni aibu kuchukua jasho la mtu mwingine bila heshima. Kazi ninayofanya ni ya bidii, ubunifu na kujitolea. Tafadhali acha kuiba, jenga kitu chako mwenyewe kama mtu mwenye heshima."`) 
 
    
 
@@ -89,7 +89,7 @@ zokou({ nomCom: 'done',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*Tap Here To Join DULLAH MD Telegram Chatroom* https://t.me/+CP2BirU5pBj04cXXgEbfuv`) 
+                 await repondre(`*Tap Here To Jknow me`) 
 
    
 
@@ -110,7 +110,7 @@ zokou({ nomCom: 'vision',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*_dullah md bot_*`) 
+                 await repondre(`*_Dont clone made your_*`) 
 
    
 
