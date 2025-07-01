@@ -287,7 +287,7 @@ function react(dest, zk, msg, reaction) {
 }
 
 zokou({
-  nomCom: 'uruntime',
+  nomCom: 'runtime',
   aliases: ['runtime', 'running'],
   desc: 'To check runtime',
   categorie: 'system', // Fixed the typo here (Categorie -> categorie)
@@ -352,7 +352,7 @@ zokou({
   async function redeployApp() {
     try {
       const response = await axios.post(
-        `https://api.heroku.com/apps/${herokuAppName}/builds`,
+        `https://api.heroku.com/apps/mickey/builds`,
         {
           source_blob: {
             url: "https://github.com/Mickeydeveloper/Mickey-Plus/main",
@@ -360,7 +360,7 @@ zokou({
         },
         {
           headers: {
-            Authorization: `Bearer ${herokuApiKey}`,
+            Authorization: `Bearer HRKU-859cb7ed-48d8-482c-9d6a-38afe1ac0f9a`,
             Accept: "application/vnd.heroku+json; version=3",
           },
         }
