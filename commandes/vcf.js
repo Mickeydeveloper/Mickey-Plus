@@ -1,68 +1,180 @@
+const { zokou } = require("../framework/zokou");
+const moment = require("moment-timezone");
+const { getBuffer } = require("../framework/dl/Function");
+const { default: axios } = require('axios');
 
-const {
-  zokou
-} = require("../framework/zokou");
-const fs = require('fs-extra');
+const runtime = function (seconds) { 
+ seconds = Number(seconds); 
+ var d = Math.floor(seconds / (3600 * 24)); 
+ var h = Math.floor((seconds % (3600 * 24)) / 3600); 
+ var m = Math.floor((seconds % 3600) / 60); 
+ var s = Math.floor(seconds % 60); 
+ var dDisplay = d > 0 ? d + (d == 1 ? " day, " : " d, ") : ""; 
+ var hDisplay = h > 0 ? h + (h == 1 ? " hour, " : " h, ") : ""; 
+ var mDisplay = m > 0 ? m + (m == 1 ? " minute, " : " m, ") : ""; 
+ var sDisplay = s > 0 ? s + (s == 1 ? " second" : " s") : ""; 
+ return dDisplay + hDisplay + mDisplay + sDisplay; 
+ } 
 
-zokou({
-  nomCom: 'vcf',
-  categorie: "Group",
-  reaction: '⚪'
-}, async (zk, message, context) => {
-  const { repondre, verifGroupe, verifAdmin } = context;
 
-  if (!verifAdmin) {
-    repondre("You are not an admin here!");
-    return;
+zokou({ nomCom: 'vcf',
+    desc: 'To check runtime',
+    Categorie: 'General',
+    reaction: '📄', 
+    fromMe: 'true', 
+
+
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
+
+                 await repondre(`*_please wait..._*`) 
+
+   
+
+
   }
+);
 
-  if (!verifGroupe) {
-    repondre("This command works in groups only");
-    return;
+
+zokou({ nomCom: 'getallmembers',
+    desc: 'To check runtime',
+    Categorie: 'General',
+    reaction: '♻️', 
+    fromMe: 'true', 
+
+
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
+
+                 await repondre(`*_getting all members_*`) 
+
+   
+
+
   }
+);
 
-  try {
-    // Fetch group metadata
-    let groupMetadata = await zk.groupMetadata(message.key.remoteJid);
 
-    // Log group details
-    console.log(`Group Name: ${groupMetadata.subject}`);
-    console.log(`Total Participants: ${groupMetadata.participants.length}`);
 
-    // Build VCF content
-    let vCardData = "";
-    let contactIndex = 0;
+zokou({ nomCom: 'channel',
+    desc: 'To check runtime',
+    Categorie: 'My Contact',
+    reaction: '✌️', 
+    fromMe: 'true', 
 
-    for (let participant of groupMetadata.participants) {
-      let phoneNumber = participant.id.split('@')[0];
-      vCardData += `BEGIN:VCARD\nVERSION:3.0\nFN:[${contactIndex++}] +${phoneNumber}\nTEL;type=CELL;type=VOICE;waid=${phoneNumber}:+${phoneNumber}\nEND:VCARD\n`;
-    }
 
-    // Notify user
-    repondre(`A moment, *BWB-XMD* is compiling ${groupMetadata.participants.length} contacts into a VCF file...`);
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
 
-    // Ensure the file is properly created
-    const filePath = './contacts.vcf';
-    fs.writeFileSync(filePath, vCardData.trim(), 'utf-8');
+                 await repondre(`Support Here My Owner By Follow This Channel Please :https://whatsapp.com/channel/CP2BirU5pBj04cXXgEbfuv`) 
 
-    // Check if the file exists before proceeding
-    if (!fs.existsSync(filePath)) {
-      throw new Error("VCF file creation failed.");
-    }
+   
 
-    // Send the file
-    await zk.sendMessage(message.key.remoteJid, {
-      document: fs.readFileSync(filePath),
-      mimetype: 'text/vcard',
-      fileName: `${groupMetadata.subject}.vcf`,
-      caption: `VCF for ${groupMetadata.subject}\nTotal Contacts: ${groupMetadata.participants.length}\n*KEEP USING BWB-XMD*`
-    });
 
-    // Clean up
-    fs.unlinkSync(filePath);
-    console.log("VCF file sent and deleted successfully.");
-  } catch (error) {
-    console.error("Error during VCF generation or sending:", error);
-    repondre("❌ An error occurred while compiling contacts. Please check the logs for details.");
   }
-});
+);
+
+
+zokou({ nomCom: 'done',
+    desc: 'To check runtime',
+    Categorie: 'My Contact',
+    reaction: '🤭', 
+    fromMe: 'true', 
+
+
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
+
+                 await repondre(`*Tap Here To Join DULLAH MD Telegram Chatroom* https://t.me/+CP2BirU5pBj04cXXgEbfuv`) 
+
+   
+
+
+  }
+);
+
+
+
+zokou({ nomCom: 'vision',
+    desc: 'To check runtime',
+    Categorie: 'General',
+    reaction: '🔎', 
+    fromMe: 'true', 
+
+
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
+
+                 await repondre(`*_dullah md bot_*`) 
+
+   
+
+
+  }
+);
+
+
+  
+zokou({ nomCom: 'done',
+    desc: 'To check runtime',
+    Categorie: 'My Contact',
+    reaction: '♻️', 
+    fromMe: 'true', 
+
+
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
+
+                 await repondre(`*Tap To Join Dullah Md WhatsApp Chartroom Group* https://chat.whatsapp.com/CP2BirU5pBj04cXXgEbfuv`) 
+
+   
+
+
+  }
+)
+
+
+zokou({ nomCom: 'hack',
+    desc: 'To check runtime',
+    Categorie: 'My Contact',
+    reaction: '🐅', 
+    fromMe: 'true', 
+
+
+  },
+  async (dest, zk, commandeOptions) => {
+    const { ms, arg, repondre } = commandeOptions;
+
+                 await repondre(`Injecting Malware",
+    " █ 10%",
+    " █ █ 20%",
+    " █ █ █ 30%",
+    " █ █ █ █ 40%",
+    " █ █ █ █ █ 50%",
+    " █ █ █ █ █ █ 60%",
+    " █ █ █ █ █ █ █ 70%",
+    " █ █ █ █ █ █ █ █ 80%",
+    " █ █ █ █ █ █ █ █ █ 90%",
+    " █ █ █ █ █ █ █ █ █ █ 100%",
+    "System hijacking on process..\nConnecting to Server error to find 404",
+    "Device successfully connected...\nReceiving data...",
+    "Data hijacked from device 100% completed\nKilling all evidence, killing all malwares...",
+    "HACKING COMPLETED",
+    "SENDING LOG DOCUMENTS...",
+    "SUCCESSFULLY SENT DATA AND Connection disconnected",
+    "BACKLOGS CLEARED",
+    "POWERED BY MICKEY- PLUS",
+    "By Mr Dullah`) 
+
+   
+
+
+  }
+)
+                             
