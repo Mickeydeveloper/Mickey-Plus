@@ -1,101 +1,111 @@
-const util = require('util');
-const fs = require('fs-extra');
-const { zokou } = require(__dirname + "/../framework/zokou");
-const { format } = require(__dirname + "/../framework/mesfonctions");
-const os = require("os");
+const {
+  zokou
+} = require(__dirname + '/../framework/zokou');
+const {
+  format
+} = require(__dirname + '/../framework/mesfonctions');
+const os = require('os');
 const moment = require("moment-timezone");
-
-zokou({ nomCom: "menu", reaction:"📁",categorie: "Général" }, async (dest, zk, commandeOptions) => {
-    let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
-    let { cm } = require(__dirname + "/../framework//zokou");
-    var coms = {};
-    var mode = "public";
-    
-    if ((s.MODE).toLowerCase() != "oui") {
-        mode = "privé";
+const s = require(__dirname + "/../set");
+function createVCard() {
+  return {
+    'key': {
+      'fromMe': false,
+      'participant': '0@s.whatsapp.net',
+      'remoteJid': 'status@broadcast'
+    },
+    'message': {
+      'contactMessage': {
+        'displayName': "DULLAH-XMD",
+        'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:DULLAH-XMD\nitem1.TEL;waid=255716945971:255716945971\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+      }
     }
-
-     
-
-    cm.map(async (com, index) => {
-        if (!coms[com.categorie])
-            coms[com.categorie] = [];
-        coms[com.categorie].push(com.nomCom);
-    });
-
-    moment.tz.setDefault('Etc/GMT');
-
-// Créer une date et une heure en GMT
-const temps = moment().format('HH:mm:ss');
-const date = moment().format('DD/MM/YYYY');
-
-  let infoMsg =  `
-╭────✧${s.BOT}✧────◆
-│   *Préfixe* : ${s.PREFIXE}
-│   *Owner* : ${s.NOM_OWNER}
-│   *Mode* : ${mode}
-│   *Commandes* : ${cm.length}
-│   *Date* : ${date}
-│   *Heure* : ${temps}
-│   *Mémoire* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-│   *Plateforme* : ${os.platform()}
-│   *Développeurs* : Djalega++ 
-│  & M๏𝓷keℽ D Lบffy
-╰─────✧WA-BOT✧─────◆ \n\n`;
-    
-let menuMsg = `
-👋 salut ${nomAuteurMessage} 👋
-
-*Voici la liste de mes commandes :*
-◇                             ◇
-`;
-
-    for (const cat in coms) {
-        menuMsg += `╭────❏ *${cat}* ❏`;
-        for (const cmd of coms[cat]) {
-            menuMsg += `
-│ ${cmd}`;
-        }
-        menuMsg += `
-╰═════════════⊷ \n`
-    }
-
-    menuMsg += `
-◇            ◇
-*»»————— ★ —————««*
-Pour utiliser  une  commande, tapez  ${prefixe}"nom de la commande"
- 
- powered by zokou-md
-                                                
-*»»————— ★ —————««*
-`;
-
-    
-   var lien = mybotpic();
-
-   if (lien.match(/\.(mp4|gif)$/i)) {
-    try {
-        zk.sendMessage(dest, { video: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" , gifPlayback : true}, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-// Vérification pour .jpeg ou .png
-else if (lien.match(/\.(jpeg|png|jpg)$/i)) {
-    try {
-        zk.sendMessage(dest, { image: { url: lien }, caption:infoMsg + menuMsg, footer: "Je suis *Zokou-MD*, développé par Djalega++" }, { quoted: ms });
-    }
-    catch (e) {
-        console.log("🥵🥵 Menu erreur " + e);
-        repondre("🥵🥵 Menu erreur " + e);
-    }
-} 
-else {
-    
-    repondre(infoMsg + menuMsg);
-    
+  };
 }
-
+function getGreeting(_0x4ff66e) {
+  const _0x27812d = moment().hour();
+  if (_0x27812d >= 0x5 && _0x27812d < 0xc) {
+    return "🌅☀️ Good morning, *" + _0x4ff66e + '*!';
+  }
+  if (_0x27812d >= 0xc && _0x27812d < 0x11) {
+    return "☀️😎 Good afternoon, *" + _0x4ff66e + '*!';
+  }
+  if (_0x27812d >= 0x11 && _0x27812d < 0x15) {
+    return "🌆✨ Good evening, *" + _0x4ff66e + '*!';
+  }
+  return "🌙😴 Good night, *" + _0x4ff66e + '*!';
+}
+function buildMenu(_0x38dac4, _0x242839, _0xd022c6) {
+  moment.tz.setDefault("Africa/Nairobi");
+  const _0x5697a1 = _0x242839.replace(/[*_~`]/g, '') || "User";
+  const _0x5a888c = getGreeting(_0x5697a1);
+  const _0x370fb7 = String.fromCharCode(0x200e).repeat(0xfa1);
+  const _0x11290d = moment().format('HH:mm:ss');
+  const _0xf3e0e0 = moment().format("DD/MM/YYYY");
+  const _0x54008b = os.totalmem();
+  const _0x210020 = _0x54008b - os.freemem();
+  const _0x5f4e76 = Object.values(_0xd022c6).reduce((_0x4228b3, _0x1bee11) => _0x4228b3 + _0x1bee11.length, 0x0);
+  let _0x55b6a5 = "\n\n📜 COMMAND LIST\n";
+  for (const _0x4c109c in _0xd022c6) {
+    _0x55b6a5 += "\n╭─「 *" + _0x4c109c.toUpperCase() + "* 」\n";
+    _0x55b6a5 += "│ " + _0xd022c6[_0x4c109c].map(_0x3ff3ca => '' + _0x38dac4 + _0x3ff3ca).join("\n│ ") + "\n";
+    _0x55b6a5 += "╰───────────────⊷";
+  }
+  return "╭━━ ⌜  *DULLAH-XMD v²*  ⌟ ━━⊷❍\n┃ 👤 ʙᴏᴛ ᴜsᴇʀ: *" + _0x5697a1 + "*\n┃ 🌍 ᴍᴏᴅᴇ: *" + (s.MODE.toLowerCase() !== 'yes' ? 'private' : 'public') + "*\n┃ 🔤 ᴘʀᴇғɪx: [ " + _0x38dac4 + " ]\n┃ 💻 ᴘʟᴀᴛғᴏʀᴍ: *linux*\n┃ 📅 ᴅᴀᴛᴇ: *" + _0xf3e0e0 + "*\n┃ ⏰ ᴛɪᴍᴇ: *" + _0x11290d + "*\n┃ 📚 ᴄᴏᴍᴍᴀɴᴅs: *" + _0x5f4e76 + "*\n┃ 💾 ᴄᴀᴘᴀᴄɪᴛʏ: *" + format(_0x210020) + '/' + format(_0x54008b) + "*\n╰━━━━━━━━━━━━━━━━━━━━━━⊷❍\n\n" + _0x5a888c + "\n\n" + _0x370fb7 + "\n" + _0x55b6a5;
+}
+zokou({
+  'nomCom': "menu",
+  'categorie': "General",
+  'reaction': '📋'
+}, async (_0x1ec11a, _0xcdf709, {
+  ms: _0x4a0116,
+  repondre: _0x3bba52,
+  prefixe: _0x520bab,
+  nomAuteurMessage: _0x129929
+}) => {
+  try {
+    const {
+      cm: _0xcd50de
+    } = require(__dirname + '/../framework/zokou');
+    const _0x2806cb = {};
+    _0xcd50de.forEach(_0x4b71e8 => {
+      if (!_0x2806cb[_0x4b71e8.categorie]) {
+        _0x2806cb[_0x4b71e8.categorie] = [];
+      }
+      _0x2806cb[_0x4b71e8.categorie].push(_0x4b71e8.nomCom);
+    });
+    const _0x5f22be = _0x4a0116.pushName || _0x129929 || "User";
+    await _0xcdf709.sendMessage(_0x1ec11a, {
+      'image': {
+        'url': "https://files.catbox.moe/533oqh.jpg"
+      },
+      'caption': buildMenu(_0x520bab, _0x5f22be, _0x2806cb),
+      'footer': "DULLAH-XMD • Powered by Dullah"
+    }, {
+      'quoted': {
+        'key': {
+          'fromMe': false,
+          'participant': '0@s.whatsapp.net',
+          'remoteJid': 'status@broadcast'
+        },
+        'message': {
+          'contactMessage': {
+            'displayName': "DULLAH-XMD",
+            'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:DULLAH-XMD\nitem1.TEL;waid=255716945971:255716945971\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+          }
+        }
+      }
+    });
+    const _0x343768 = ["https://files.catbox.moe/wsyxi0.mp3", "https://files.catbox.moe/w2k8g2.mp3", 'https://files.catbox.moe/cpjbnl.mp3'];
+    await _0xcdf709.sendMessage(_0x1ec11a, {
+      'audio': {
+        'url': _0x343768[Math.floor(Math.random() * _0x343768.length)]
+      },
+      'mimetype': "audio/mpeg",
+      'ptt': true
+    });
+  } catch (_0x544bc6) {
+    console.error("Menu Error:", _0x544bc6);
+    _0x3bba52("❌ Error generating menu");
+  }
 });
