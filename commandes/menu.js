@@ -16,8 +16,8 @@ function createVCard() {
     },
     'message': {
       'contactMessage': {
-        'displayName': "DULLAH-XMD",
-        'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:DULLAH-XMD\nitem1.TEL;waid=255716945971:255716945971\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+        'displayName': "MICKEY",
+        'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:MICKEY\nitem1.TEL;waid=255612130973:255711765335\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
       }
     }
   };
@@ -51,7 +51,7 @@ function buildMenu(_0x38dac4, _0x242839, _0xd022c6) {
     _0x55b6a5 += "│ " + _0xd022c6[_0x4c109c].map(_0x3ff3ca => '' + _0x38dac4 + _0x3ff3ca).join("\n│ ") + "\n";
     _0x55b6a5 += "╰───────────────⊷";
   }
-  return "╭━━ ⌜  *DULLAH-XMD v²*  ⌟ ━━⊷❍\n┃ 👤 ʙᴏᴛ ᴜsᴇʀ: *" + _0x5697a1 + "*\n┃ 🌍 ᴍᴏᴅᴇ: *" + (s.MODE.toLowerCase() !== 'yes' ? 'private' : 'public') + "*\n┃ 🔤 ᴘʀᴇғɪx: [ " + _0x38dac4 + " ]\n┃ 💻 ᴘʟᴀᴛғᴏʀᴍ: *linux*\n┃ 📅 ᴅᴀᴛᴇ: *" + _0xf3e0e0 + "*\n┃ ⏰ ᴛɪᴍᴇ: *" + _0x11290d + "*\n┃ 📚 ᴄᴏᴍᴍᴀɴᴅs: *" + _0x5f4e76 + "*\n┃ 💾 ᴄᴀᴘᴀᴄɪᴛʏ: *" + format(_0x210020) + '/' + format(_0x54008b) + "*\n╰━━━━━━━━━━━━━━━━━━━━━━⊷❍\n\n" + _0x5a888c + "\n\n" + _0x370fb7 + "\n" + _0x55b6a5;
+  return "╭━━ ⌜  *MICKEY-PLUS*  ⌟ ━━⊷❍\n┃ 👤 ʙᴏᴛ ᴜsᴇʀ: *" + _0x5697a1 + "*\n┃ 🌍 ᴍᴏᴅᴇ: *" + (s.MODE.toLowerCase() !== 'yes' ? 'private' : 'public') + "*\n┃ 🔤 ᴘʀᴇғɪx: [ " + _0x38dac4 + " ]\n┃ 💻 ᴘʟᴀᴛғᴏʀᴍ: *linux*\n┃ 📅 ᴅᴀᴛᴇ: *" + _0xf3e0e0 + "*\n┃ ⏰ ᴛɪᴍᴇ: *" + _0x11290d + "*\n┃ 📚 ᴄᴏᴍᴍᴀɴᴅs: *" + _0x5f4e76 + "*\n┃ 💾 ᴄᴀᴘᴀᴄɪᴛʏ: *" + format(_0x210020) + '/' + format(_0x54008b) + "*\n╰━━━━━━━━━━━━━━━━━━━━━━⊷❍\n\n" + _0x5a888c + "\n\n" + _0x370fb7 + "\n" + _0x55b6a5;
 }
 zokou({
   'nomCom': "menu",
@@ -77,10 +77,10 @@ zokou({
     const _0x5f22be = _0x4a0116.pushName || _0x129929 || "User";
     await _0xcdf709.sendMessage(_0x1ec11a, {
       'image': {
-        'url': "https://files.catbox.moe/533oqh.jpg"
+        'url': "https://files.catbox.moe/hz6aaj.jpg"
       },
       'caption': buildMenu(_0x520bab, _0x5f22be, _0x2806cb),
-      'footer': "DULLAH-XMD • Powered by Dullah"
+      'footer': "MICKEY-PLUS • Powered by mickey"
     }, {
       'quoted': {
         'key': {
@@ -90,13 +90,13 @@ zokou({
         },
         'message': {
           'contactMessage': {
-            'displayName': "DULLAH-XMD",
-            'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:DULLAH-XMD\nitem1.TEL;waid=255716945971:255716945971\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
+            'displayName': "MICKEY-PLUS",
+            'vcard': "BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:MICKEY-PLUS\nitem1.TEL;waid=255612130873:255711765335\nitem1.X-ABLabel:Ponsel\nEND:VCARD"
           }
         }
       }
     });
-    const _0x343768 = ["https://files.catbox.moe/wsyxi0.mp3", "https://files.catbox.moe/w2k8g2.mp3", 'https://files.catbox.moe/cpjbnl.mp3'];
+    const _0x343768 = ["https://files.catbox.moe/0mdw00.m4a", "https://files.catbox.moe/73pztj.mp3", 'https://files.catbox.moe/0mdw00.m4a'];
     await _0xcdf709.sendMessage(_0x1ec11a, {
       'audio': {
         'url': _0x343768[Math.floor(Math.random() * _0x343768.length)]
