@@ -19,7 +19,7 @@ const{repondre,ms,dev,superUser}=com;
 
   const {exec}=require("child_process")
 
-    repondre("Mickey-plus bot Restarting be cool.Thanks for choosing toxic ©Charleske-xmd⏳");
+    repondre("Mickey-plus bot Restarting be cool.Thanks for choosing ");
 
   exec("pm2 restart all");
   
