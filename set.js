@@ -1,52 +1,57 @@
-
-const fs = require('fs-extra');
-const { Sequelize } = require('sequelize');
-if (fs.existsSync('set.env'))
-    require('dotenv').config({ path: __dirname + '/set.env' });
-const path = require("path");
-const databasePath = path.join(__dirname, './database.db');
-const DATABASE_URL = process.env.DATABASE_URL === undefined
-    ? databasePath
-    : process.env.DATABASE_URL;yJub2lz
-module.exports = { session: process.env.SESSION_ID || '',
-    PREFIXE: process.env.PREFIX || ".",
-    OWNER_NAME: process.env.OWNER_NAME || "mickey",
-    NUMERO_OWNER : process.env.NUMERO_OWNER || "255612130873",              
-    AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "yes",
-    AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'yes',
-    BOT : process.env.BOT_NAME || 'MICKEY-PLUS',
-    URL : process.env.BOT_MENU_LINKS || 'https://files.catbox.moe/o2klsv.jpg',
-    MODE: process.env.PUBLIC_MODE || "yes",
-    PM_PERMIT: process.env.PM_PERMIT || 'yes',
-    HEROKU_APP_NAME : process.env.HEROKU_APP_NAME,
-    HEROKU_APY_KEY : process.env.HEROKU_APY_KEY ,
-    WARN_COUNT : process.env.WARN_COUNT || '3' ,
-    ETAT : process.env.PRESENCE || '',
-    CHATBOT : process.env.CHATBOT || 'yes',
-    DP : process.env.STARTING_BOT_MESSAGE || "yes",
-    ADM : process.env.ANTI_DELETE_MESSAGE || 'yes',
-    ANTIDELETE1 : process.env.ANTIDELETE1 || 'yes',
-                  ANTIDELETE2 : process.env.ANTIDELETE2 || 'yes',
-                  CHARLESKE_CHATBOT : process.env.CHARLESKE_CHATBOT || 'yes',
-                  ANTICALL : process.env.ANTICALL || 'no',
-                  AUTO_REACT : process.env.AUTO_REACT || 'no',
-                  AUTO_REACT_STATUS : process.env.AUTO_REACT_STATUS || 'yes',
-                  AUTO_REPLY : process.env.AUTO_REPLY || 'yes',
-                  AUTO_READ : process.env.AUTO_READ || 'no',
-                  AUTO_SAVE_CONTACTS : process.env.AUTO_SAVE_CONTACTS || 'no',
-                  AUTO_REJECT_CALL : process.env.AUTO_REJECT_CALL || 'yes',
-                  AUTO_BIO : process.env.AUTO_BIO || 'yes',
-                  AUDIO_REPLY : process.env.AUDIO_REPLY || 'yes',
-                  AUTO_TAG_STATUS : process.env.AUTO_TAG_STATUS || 'yes',
-    DATABASE_URL,
-    DATABASE: DATABASE_URL === databasePath
-        ? "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway" : "postgresql://postgres:bKlIqoOUWFIHOAhKxRWQtGfKfhGKgmRX@viaduct.proxy.rlwy.net:47738/railway",
-   
-};
-let fichier = require.resolve(__filename);
-fs.watchFile(fichier, () => {
-    fs.unwatchFile(fichier);
-    console.log(`mise à jour ${__filename}`);
-    delete require.cache[fichier];
-    require(fichier);
+const a86_0x2b4e64 = function () {
+  let _0x5f3df5 = true;
+  return function (_0x1147c6, _0x197e27) {
+    const _0x4a5b77 = _0x5f3df5 ? function () {
+      if (_0x197e27) {
+        const _0x20e524 = _0x197e27.apply(_0x1147c6, arguments);
+        _0x197e27 = null;
+        return _0x20e524;
+      }
+    } : function () {};
+    _0x5f3df5 = false;
+    return _0x4a5b77;
+  };
+}();
+const a86_0x4243f8 = a86_0x2b4e64(this, function () {
+  return a86_0x4243f8.toString().search('(((.+)+)+)+$').toString().constructor(a86_0x4243f8).search('(((.+)+)+)+$');
 });
+a86_0x4243f8();
+const fs = require("fs-extra");
+const path = require("path");
+const {
+  TEMP_DIR
+} = require('./framework/constant');
+if (fs.existsSync("set.env")) {
+  require("dotenv").config({
+    'path': __dirname + "/set.env"
+  });
+}
+process.env.TEMP = TEMP_DIR;
+module.exports = {
+  'VERSION': require('./package.json').version,
+  'DATABASE_PATH': path.join(__dirname, "database.db"),
+  'STORE_PATH': path.join(__dirname, "store.db"),
+  'SESSION_ID': process.env.SESSION_ID || "",
+  'PRESENCE': process.env.PRESENCE,
+  'PREFIX': process.env.PREFIX || '.',
+  'OWNER_NAME': process.env.OWNER_NAME || "MICKEY",
+  'OWNER_NUMBER': process.env.OWNER_NUMBER || "",
+  'AUTO_READ_STATUS': process.env.AUTO_READ_STATUS || 'no',
+  'AUTO_DOWNLOAD_STATUS': process.env.AUTO_DOWNLOAD_STATUS || 'no',
+  'MODE_PUBLIC': process.env.MODE_PUBLIC || "yes",
+  'PM_PERMIT': process.env.PM_PERMIT || 'no',
+  'BOT_NAME': process.env.BOT_NAME || "MICKEY-PLUS",
+  'MENU_THEME': process.env.MENU_THEME || 'ELIE',
+  'HEROKU_APP_NAME': process.env.HEROKU_APP_NAME || null,
+  'HEROKU_API_KEY': process.env.HEROKU_API_KEY || null,
+  'WARN_COUNT': process.env.WARN_COUNT || '3',
+  'STARTING_BOT_MESSAGE': process.env.STARTING_BOT_MESSAGE || "yes",
+  'PM_CHATBOT': process.env.PM_CHATBOT || 'no',
+  'SERVER': process.env.SERVER || null,
+  'ANTI_COMMAND_SPAM': process.env.ANTI_COMMAND_SPAM || 'yes',
+  'ANTI_DELETE_MESSAGE': process.env.ANTI_DELETE_MESSAGE || "yes",
+  'AUTO_REACT_MESSAGE': process.env.AUTO_REACT_MESSAGE || 'no',
+  'AUTO_REACT_STATUS': process.env.AUTO_REACT_STATUS || 'no',
+  'TIME_ZONE': process.env.TIME_ZONE || "Africa/Sao_Tome",
+  'STICKER_PACKNAME': process.env.STICKER_PACKNAME || "made byn mickey-plus"
+};
